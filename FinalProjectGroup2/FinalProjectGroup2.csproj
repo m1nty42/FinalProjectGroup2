@@ -22,4 +22,13 @@
     <PackageReference Include="NSwag.AspNetCore" Version="14.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="FinalProjectGroup2DB.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FinalProjectGroup2DB_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
