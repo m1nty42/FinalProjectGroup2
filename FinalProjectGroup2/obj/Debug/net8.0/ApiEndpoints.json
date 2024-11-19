@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "FinalProjectGroup2.Controllers.VidGameXMsController",
+    "ContainingType": "FinalProjectGroup2.Controllers.VidGamesControllerXM",
     "Method": "PostVidGameXM",
-    "RelativePath": "api/VidGameXMs",
+    "RelativePath": "api/VidGamesControllerXM",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -26,9 +26,9 @@
     ]
   },
   {
-    "ContainingType": "FinalProjectGroup2.Controllers.VidGameXMsController",
+    "ContainingType": "FinalProjectGroup2.Controllers.VidGamesControllerXM",
     "Method": "GetVidGameXM",
-    "RelativePath": "api/VidGameXMs/{id}",
+    "RelativePath": "api/VidGamesControllerXM/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -52,9 +52,9 @@
     ]
   },
   {
-    "ContainingType": "FinalProjectGroup2.Controllers.VidGameXMsController",
+    "ContainingType": "FinalProjectGroup2.Controllers.VidGamesControllerXM",
     "Method": "PutVidGameXM",
-    "RelativePath": "api/VidGameXMs/{id}",
+    "RelativePath": "api/VidGamesControllerXM/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -73,9 +73,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FinalProjectGroup2.Controllers.VidGameXMsController",
+    "ContainingType": "FinalProjectGroup2.Controllers.VidGamesControllerXM",
     "Method": "DeleteVidGameXM",
-    "RelativePath": "api/VidGameXMs/{id}",
+    "RelativePath": "api/VidGamesControllerXM/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
