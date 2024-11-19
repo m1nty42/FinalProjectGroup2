@@ -8335,19 +8335,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jmbxt\\.nuget\\packages\\": {}
+    "C:\\Users\\ehcli\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jmbxt\\source\\repos\\FinalProjectGroup2\\FinalProjectGroup2.csproj",
+      "projectUniqueName": "C:\\Users\\ehcli\\Source\\Repos\\FinalProjectGroup2\\FinalProjectGroup2\\FinalProjectGroup2.csproj",
       "projectName": "FinalProjectGroup2",
-      "projectPath": "C:\\Users\\jmbxt\\source\\repos\\FinalProjectGroup2\\FinalProjectGroup2.csproj",
-      "packagesPath": "C:\\Users\\jmbxt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jmbxt\\source\\repos\\FinalProjectGroup2\\obj\\",
+      "projectPath": "C:\\Users\\ehcli\\Source\\Repos\\FinalProjectGroup2\\FinalProjectGroup2\\FinalProjectGroup2.csproj",
+      "packagesPath": "C:\\Users\\ehcli\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ehcli\\Source\\Repos\\FinalProjectGroup2\\FinalProjectGroup2\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\jmbxt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ehcli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8355,6 +8360,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8420,7 +8426,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
