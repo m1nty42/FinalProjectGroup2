@@ -1,6 +1,6 @@
 ﻿namespace FinalProjectGroup2.Models
 {
-    public class VidGameXM
+    public class VidGameXM //Xander Marsden
     {
         public int Id { get; set; }
         public string FullName { get; set; }

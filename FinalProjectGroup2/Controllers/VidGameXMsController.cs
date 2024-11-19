@@ -23,7 +23,7 @@ namespace FinalProjectGroup2.Controllers
 
         // GET: api/VidGameXMs
         [HttpGet("{id?}")]
-        public async Task<ActionResult<IEnumerable<VidGameXM>>> GetVideoGames(int? id)
+        public async Task<ActionResult<IEnumerable<VidGameXM>>> GetVidGameXM(int? id)
         {
             if (id == null || id == 0)
             {
@@ -80,7 +80,7 @@ namespace FinalProjectGroup2.Controllers
             _context.VideoGames.Add(vidGameXM);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetVidGameXM", new { id = vidGameXM.Id }, vidGameXM);
+            return CreatedAtAction(nameof(GetVidGameXM), new { id = vidGameXM.Id }, vidGameXM);
         }
 
         // DELETE: api/VidGameXMs/5

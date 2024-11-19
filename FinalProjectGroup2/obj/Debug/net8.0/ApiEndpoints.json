@@ -27,7 +27,7 @@
   },
   {
     "ContainingType": "FinalProjectGroup2.Controllers.VidGameXMsController",
-    "Method": "GetVideoGames",
+    "Method": "GetVidGameXM",
     "RelativePath": "api/VidGameXMs/{id}",
     "HttpMethod": "GET",
     "IsController": true,
