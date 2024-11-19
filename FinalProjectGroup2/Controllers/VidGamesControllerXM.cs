@@ -12,11 +12,11 @@ namespace FinalProjectGroup2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VidGameXMsController : ControllerBase
+    public class VidGamesControllerXM : ControllerBase
     {
         private readonly AppDbContextXM _context;
 
-        public VidGameXMsController(AppDbContextXM context)
+        public VidGamesControllerXM(AppDbContextXM context)
         {
             _context = context;
         }
