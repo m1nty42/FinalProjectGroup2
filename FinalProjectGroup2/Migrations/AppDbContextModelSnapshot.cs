@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FinalProjectGroup2.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(AppDbContextXM))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -48,6 +48,24 @@ namespace FinalProjectGroup2.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("VideoGames");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            FullName = "Xander Marsden",
+                            GameName = "HellDivers 2",
+                            InitialDate = new DateTime(2024, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Platform = "PC"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            FullName = "John Doe",
+                            GameName = "Astro Bot",
+                            InitialDate = new DateTime(2023, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Platform = "PlayStation 5"
+                        });
                 });
 #pragma warning restore 612, 618
         }
