@@ -14,9 +14,9 @@ namespace FinalProjectGroup2.Controllers
     [ApiController]
     public class VidGamesControllerXM : ControllerBase
     {
-        private readonly AppDbContextXM _context;
+        private readonly AppDbContext _context;
 
-        public VidGamesControllerXM(AppDbContextXM context)
+        public VidGamesControllerXM(AppDbContext context)
         {
             _context = context;
         }
