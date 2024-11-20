@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=FinalProjectGroup2DB"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add NSwag services
 builder.Services.AddOpenApiDocument(config =>
