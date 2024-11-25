@@ -30,7 +30,7 @@ namespace FinalProjectGroup2.Data
                 new VidGameXM
                 {
                     Id = 2,
-                    FullName = "Eli Cagel",
+                    FullName = "Eli Cagle",
                     InitialDate = new DateTime(2023, 12, 15),
                     Platform = "Xbox",
                     GameName = "Call of Duty"
