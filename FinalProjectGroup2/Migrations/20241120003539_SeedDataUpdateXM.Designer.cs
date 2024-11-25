@@ -11,9 +11,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FinalProjectGroup2.Migrations
 {
-    [DbContext(typeof(AppDbContextXM))]
-    [Migration("20241119182513_UpdateSeedDataXM")]
-    partial class UpdateSeedDataXM
+    [DbContext(typeof(AppDbContext))]
+    [Migration("20241120003539_SeedDataUpdateXM")]
+    partial class SeedDataUpdateXM
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -64,6 +64,38 @@ namespace FinalProjectGroup2.Migrations
                         new
                         {
                             Id = 2,
+                            FullName = "Eli Cagel",
+                            GameName = "Call of Duty",
+                            InitialDate = new DateTime(2023, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Platform = "Xbox"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            FullName = "Marian Muntean",
+                            GameName = "Until Dawn",
+                            InitialDate = new DateTime(2021, 11, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Platform = "PlayStation 4"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            FullName = "Zachary Baker",
+                            GameName = "Phasmaphobia",
+                            InitialDate = new DateTime(2020, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Platform = "Xbox"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            FullName = "Kevin Stradman",
+                            GameName = "Sonic Heroes",
+                            InitialDate = new DateTime(2022, 10, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Platform = "GameCube"
+                        },
+                        new
+                        {
+                            Id = 6,
                             FullName = "John Doe",
                             GameName = "Astro Bot",
                             InitialDate = new DateTime(2023, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),

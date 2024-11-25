@@ -7,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddDbContext<AppDbContextXM>(options =>
-    options.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=FinalProjectGroup2DB"));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Configure CORS
 builder.Services.AddCors(options =>
