@@ -6,5 +6,6 @@
         public DateTime BirthDate { get; set; }
         public string CollegeProgram { get; set; }
         public string YearInProgram { get; set; }
+        public int Id { get; internal set; }
     }
 }
