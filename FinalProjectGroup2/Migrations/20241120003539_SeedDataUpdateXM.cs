@@ -34,11 +34,7 @@ namespace FinalProjectGroup2.Migrations
                 columns: new[] { "Id", "FullName", "GameName", "InitialDate", "Platform" },
                 values: new object[,]
                 {
-<<<<<<<< HEAD:FinalProjectGroup2/Migrations/20241119235203_InitialCreate.cs
-                    { 1, "Xander Marsden Updated", "HellDivers 2", new DateTime(2024, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "PC" },
-========
                     { 1, "Xander Marsden", "HellDivers 2", new DateTime(2024, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "PC" },
->>>>>>>> fd8c11841c5b92f84dc444cc5f4459f79c3e70e6:FinalProjectGroup2/Migrations/20241120003539_SeedDataUpdateXM.cs
                     { 2, "Eli Cagel", "Call of Duty", new DateTime(2023, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "Xbox" },
                     { 3, "Marian Muntean", "Until Dawn", new DateTime(2021, 11, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), "PlayStation 4" },
                     { 4, "Zachary Baker", "Phasmaphobia", new DateTime(2020, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "Xbox" },
