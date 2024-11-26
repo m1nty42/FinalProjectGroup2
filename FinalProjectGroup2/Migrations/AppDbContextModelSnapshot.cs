@@ -22,6 +22,34 @@ namespace FinalProjectGroup2.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("FinalProjectGroup2.Models.TeamMemberEC", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Birthdate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CollegeProgram")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("YearInProgram")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TeamMembers");
+                });
+
             modelBuilder.Entity("FinalProjectGroup2.Models.VidGameXM", b =>
                 {
                     b.Property<int>("Id")
@@ -53,7 +81,7 @@ namespace FinalProjectGroup2.Migrations
                         new
                         {
                             Id = 1,
-                            FullName = "Xander Marsden Updated",
+                            FullName = "Xander Marsden",
                             GameName = "HellDivers 2",
                             InitialDate = new DateTime(2024, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Platform = "PC"

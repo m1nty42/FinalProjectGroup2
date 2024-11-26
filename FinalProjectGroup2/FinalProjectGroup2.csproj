@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Data\AppDbContextEC.cs" />
     <Compile Remove="WeatherForecast.cs" />
   </ItemGroup>
 
@@ -23,7 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <None Update="FinalProjectGroup2DB.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FinalProjectGroup2DB_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

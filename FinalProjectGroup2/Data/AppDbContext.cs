@@ -9,17 +9,17 @@ namespace FinalProjectGroup2.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
+        // DbSet for TeamMemberEC
+        public required DbSet<TeamMemberEC> TeamMembers { get; set; }
 
-        // DbSet for VidGameXM Xander Marsden
+        // DbSet for VidGameXM
         public DbSet<VidGameXM> VideoGames { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            Console.WriteLine("OnModelCreating is being called...");
             base.OnModelCreating(modelBuilder);
 
-            // Seed data for VidGameXM  Xander Marsden
-            Console.WriteLine("Seeding data...");
+            // Seed data for VidGameXM
             modelBuilder.Entity<VidGameXM>().HasData(
                 new VidGameXM
                 {
@@ -73,4 +73,5 @@ namespace FinalProjectGroup2.Data
         }
     }
     // Add additional DbSet properties for other tables
+
 }
