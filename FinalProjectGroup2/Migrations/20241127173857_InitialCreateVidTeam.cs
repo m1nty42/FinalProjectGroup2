@@ -8,11 +8,27 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FinalProjectGroup2.Migrations
 {
     /// <inheritdoc />
-    public partial class SeedDataUpdateXM : Migration
+    public partial class InitialCreateVidTeam : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "TeamMembers",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Birthdate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CollegeProgram = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    YearInProgram = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TeamMembers", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "VideoGames",
                 columns: table => new
@@ -27,6 +43,18 @@ namespace FinalProjectGroup2.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_VideoGames", x => x.Id);
+                });
+
+            migrationBuilder.InsertData(
+                table: "TeamMembers",
+                columns: new[] { "Id", "Birthdate", "CollegeProgram", "FullName", "YearInProgram" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2004, 9, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "IT", "Xander Marsden", "Sophomore" },
+                    { 2, new DateTime(2024, 11, 27, 0, 0, 0, 0, DateTimeKind.Unspecified), "??", "Eli Cagel", "??" },
+                    { 3, new DateTime(2024, 11, 27, 0, 0, 0, 0, DateTimeKind.Unspecified), "??", "Marian Muntean", "??" },
+                    { 4, new DateTime(2024, 11, 27, 0, 0, 0, 0, DateTimeKind.Unspecified), "??", "Zachary Baker", "??" },
+                    { 5, new DateTime(2024, 11, 27, 0, 0, 0, 0, DateTimeKind.Unspecified), "??", "Kevin Stradman", "??" }
                 });
 
             migrationBuilder.InsertData(
@@ -46,6 +74,9 @@ namespace FinalProjectGroup2.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "TeamMembers");
+
             migrationBuilder.DropTable(
                 name: "VideoGames");
         }

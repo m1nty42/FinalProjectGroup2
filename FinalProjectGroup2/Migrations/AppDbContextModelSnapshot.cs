@@ -48,6 +48,48 @@ namespace FinalProjectGroup2.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TeamMembers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Birthdate = new DateTime(2004, 9, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CollegeProgram = "IT",
+                            FullName = "Xander Marsden",
+                            YearInProgram = "Sophomore"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Birthdate = new DateTime(2024, 11, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CollegeProgram = "??",
+                            FullName = "Eli Cagel",
+                            YearInProgram = "??"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Birthdate = new DateTime(2024, 11, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CollegeProgram = "??",
+                            FullName = "Marian Muntean",
+                            YearInProgram = "??"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Birthdate = new DateTime(2024, 11, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CollegeProgram = "??",
+                            FullName = "Zachary Baker",
+                            YearInProgram = "??"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Birthdate = new DateTime(2024, 11, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CollegeProgram = "??",
+                            FullName = "Kevin Stradman",
+                            YearInProgram = "??"
+                        });
                 });
 
             modelBuilder.Entity("FinalProjectGroup2.Models.VidGameXM", b =>
