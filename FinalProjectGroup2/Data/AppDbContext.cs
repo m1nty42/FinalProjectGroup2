@@ -15,9 +15,63 @@ namespace FinalProjectGroup2.Data
         // DbSet for VidGameXM
         public DbSet<VidGameXM> VideoGames { get; set; }
 
+        //DbSet for CollegeTeamMM
+
+
+        //DbSet for Food
+
+
+        //DbSet for Animal
+
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            // Seed data for TeamMemberEC
+            modelBuilder.Entity<TeamMemberEC>().HasData(
+                new TeamMemberEC
+                {
+                    Id = 1,
+                    FullName = "Xander Marsden",
+                    Birthdate = new DateTime(2004, 9, 3),
+                    CollegeProgram = "IT",
+                    YearInProgram = "Sophomore"
+                },
+                 new TeamMemberEC
+                 {
+                     Id = 2,
+                     FullName = "Eli Cagel",
+                     Birthdate = new DateTime(2024, 11, 27),
+                     CollegeProgram = "??",
+                     YearInProgram = "??"
+                 },
+                new TeamMemberEC
+                {
+                    Id = 3,
+                    FullName = "Marian Muntean",
+                    Birthdate = new DateTime(2024, 11, 27),
+                    CollegeProgram = "??",
+                    YearInProgram = "??"
+                },
+                new TeamMemberEC
+                {
+                    Id = 4,
+                    FullName = "Zachary Baker",
+                    Birthdate = new DateTime(2024, 11, 27),
+                    CollegeProgram = "??",
+                    YearInProgram = "??"
+                },
+                new TeamMemberEC
+                {
+                    Id = 5,
+                    FullName = "Kevin Stradman",
+                    Birthdate = new DateTime(2024, 11, 27),
+                    CollegeProgram = "??",
+                    YearInProgram = "??"
+                                }
+            );
 
             // Seed data for VidGameXM
             modelBuilder.Entity<VidGameXM>().HasData(
@@ -70,8 +124,16 @@ namespace FinalProjectGroup2.Data
                     GameName = "Astro Bot"
                 }
             );
+
+            // Seed data for CollegeTeam
+
+
+            // Seed data for Food
+
+
+            // Seed data for Animal
         }
     }
-    // Add additional DbSet properties for other tables
+    
 
 }

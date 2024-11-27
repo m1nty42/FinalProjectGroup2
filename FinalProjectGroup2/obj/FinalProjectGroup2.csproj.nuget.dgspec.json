@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maria\\Desktop\\Contemporary\\Final Project\\FinalProjectGroup2\\FinalProjectGroup2\\FinalProjectGroup2.csproj": {}
+    "C:\\Users\\jmbxt\\source\\repos\\FinalProjectGroup2\\FinalProjectGroup2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maria\\Desktop\\Contemporary\\Final Project\\FinalProjectGroup2\\FinalProjectGroup2\\FinalProjectGroup2.csproj": {
+    "C:\\Users\\jmbxt\\source\\repos\\FinalProjectGroup2\\FinalProjectGroup2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maria\\Desktop\\Contemporary\\Final Project\\FinalProjectGroup2\\FinalProjectGroup2\\FinalProjectGroup2.csproj",
+        "projectUniqueName": "C:\\Users\\jmbxt\\source\\repos\\FinalProjectGroup2\\FinalProjectGroup2.csproj",
         "projectName": "FinalProjectGroup2",
-        "projectPath": "C:\\Users\\maria\\Desktop\\Contemporary\\Final Project\\FinalProjectGroup2\\FinalProjectGroup2\\FinalProjectGroup2.csproj",
-        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maria\\Desktop\\Contemporary\\Final Project\\FinalProjectGroup2\\FinalProjectGroup2\\obj\\",
+        "projectPath": "C:\\Users\\jmbxt\\source\\repos\\FinalProjectGroup2\\FinalProjectGroup2.csproj",
+        "packagesPath": "C:\\Users\\jmbxt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jmbxt\\source\\repos\\FinalProjectGroup2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jmbxt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -88,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
