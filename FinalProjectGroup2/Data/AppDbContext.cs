@@ -9,6 +9,8 @@ namespace FinalProjectGroup2.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
+        // DbSet for TeamMemberEC
+        public required DbSet<TeamMemberEC> TeamMembers { get; set; }
 
         // DbSet for VidGameXM
         public DbSet<VidGameXM> VideoGames { get; set; }
@@ -71,4 +73,5 @@ namespace FinalProjectGroup2.Data
         }
     }
     // Add additional DbSet properties for other tables
+
 }
