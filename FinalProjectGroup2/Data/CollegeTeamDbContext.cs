@@ -2,8 +2,9 @@
 using FinalProjectGroup2.Models;
 using System.Xml;
 
-//Marian Muntean
 namespace FinalProjectGroup2.Data
+
+     //Marian Muntean
 {
     public class CollegeTeamDbContext : DbContext
     {
@@ -58,7 +59,7 @@ namespace FinalProjectGroup2.Data
                     City = "Lexington",
                     FootballTeam = "University of Kentuky",
                     Mascot = "the Wildcat"
-                },
+                }
             );
         }
     }
