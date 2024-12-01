@@ -43,10 +43,10 @@ namespace FinalProjectGroup2.Data
                  new TeamMemberEC
                  {
                      Id = 2,
-                     FullName = "Eli Cagel",
-                     Birthdate = new DateTime(2024, 11, 27),
-                     CollegeProgram = "??",
-                     YearInProgram = "??"
+                     FullName = "Eli Cagle",
+                     Birthdate = new DateTime(2000, 06, 02),
+                     CollegeProgram = "IT",
+                     YearInProgram = "Junior"
                  },
                 new TeamMemberEC
                 {
@@ -87,7 +87,7 @@ namespace FinalProjectGroup2.Data
                 new VidGameXM
                 {
                     Id = 2,
-                    FullName = "Eli Cagel",
+                    FullName = "Eli Cagle",
                     InitialDate = new DateTime(2023, 12, 15),
                     Platform = "Xbox",
                     GameName = "Call of Duty"
@@ -147,7 +147,7 @@ namespace FinalProjectGroup2.Data
                 new CollegeTeamMM
                 {
                     Id = 3,
-                    FullName = "Eli Cagel",
+                    FullName = "Eli Cagle",
                     City = "Cincinnati",
                     FootballTeam = "University of Cincinnati",
                     Mascot = "the Bearcat"
