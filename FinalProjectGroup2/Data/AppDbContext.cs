@@ -52,9 +52,9 @@ namespace FinalProjectGroup2.Data
                 {
                     Id = 3,
                     FullName = "Marian Muntean",
-                    Birthdate = new DateTime(2024, 11, 27),
-                    CollegeProgram = "??",
-                    YearInProgram = "??"
+                    Birthdate = new DateTime(1982, 9, 4),
+                    CollegeProgram = "Information Technology",
+                    YearInProgram = "Sophmore"
                 },
                 new TeamMemberEC
                 {
