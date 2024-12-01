@@ -11,9 +11,9 @@ namespace FinalProjectGroup2.Controllers
     [ApiController]
     public class CollegeTeamControllerMM : ControllerBase
     {
-        private readonly CollegeTeamDbContext _context;
+        private readonly AppDbContext _context;
 
-        public CollegeTeamControllerMM(CollegeTeamDbContext context)
+        public CollegeTeamControllerMM(AppDbContext context)
         {
             _context = context;
         }
