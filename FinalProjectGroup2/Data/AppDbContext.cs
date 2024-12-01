@@ -19,7 +19,8 @@ namespace FinalProjectGroup2.Data
         //DbSet for CollegeTeamMM
         public DbSet<CollegeTeamMM> CollegeTeam { get; set; }
 
-        //DbSet for Food
+        //DbSet for SpaceShuttleZB
+        public DbSet<SpaceShuttleZB> SpaceShuttle { get; set; }
 
 
         //DbSet for Animal
@@ -60,9 +61,9 @@ namespace FinalProjectGroup2.Data
                 {
                     Id = 4,
                     FullName = "Zachary Baker",
-                    Birthdate = new DateTime(2024, 11, 27),
-                    CollegeProgram = "??",
-                    YearInProgram = "??"
+                    Birthdate = new DateTime(2004, 02, 04),
+                    CollegeProgram = "Information Technology",
+                    YearInProgram = "Freshman"
                 },
                 new TeamMemberEC
                 {
@@ -165,12 +166,55 @@ namespace FinalProjectGroup2.Data
                     Id = 5,
                     FullName = "Kevin Stradman",
                     City = "Lexington",
-                    FootballTeam = "University of Kentuky",
+                    FootballTeam = "University of Kentucky",
                     Mascot = "the Wildcat"
                 }
             );
 
-            // Seed data for Food
+            // Seed data for SpaceShuttleZB
+            modelBuilder.Entity<SpaceShuttleZB>().HasData(
+                new SpaceShuttleZB 
+                { 
+                    Id = 1,
+                    ShuttleName = "Columbia",
+                    FirstLaunch = new DateTime(1981, 04, 12),
+                    TotalMissions = 28,
+                    LastLaunch = new DateTime(2003, 01, 16)
+                },
+                new SpaceShuttleZB 
+                { 
+                    Id = 2,
+                    ShuttleName = "Challenger",
+                    FirstLaunch = new DateTime(1983, 04, 04),
+                    TotalMissions = 10,
+                    LastLaunch = new DateTime(1986, 01, 28)
+                },
+                new SpaceShuttleZB 
+                { 
+                    Id = 3,
+                    ShuttleName = "Discovery",
+                    FirstLaunch = new DateTime(1984, 08, 30),
+                    TotalMissions = 39,
+                    LastLaunch = new DateTime(2011, 02, 24)
+                },
+                new SpaceShuttleZB 
+                { 
+                    Id = 4,
+                    ShuttleName = "Atlantis",
+                    FirstLaunch = new DateTime(1985, 10, 3),
+                    TotalMissions = 33,
+                    LastLaunch = new DateTime(2011, 07, 08)
+                },
+                new SpaceShuttleZB 
+                { 
+                    Id = 5,
+                    ShuttleName = "Endeavour",
+                    FirstLaunch = new DateTime(1992, 05, 07),
+                    TotalMissions = 25,
+                    LastLaunch = new DateTime(2011, 05, 16)
+                }
+            );
+
 
 
             // Seed data for Animal
