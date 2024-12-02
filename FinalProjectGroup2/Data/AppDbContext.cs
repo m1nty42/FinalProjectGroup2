@@ -23,7 +23,7 @@ namespace FinalProjectGroup2.Data
         public DbSet<SpaceShuttleZB> SpaceShuttle { get; set; }
 
 
-        //DbSet for Animal
+        //DbSet for Products
 
 
 
@@ -215,9 +215,8 @@ namespace FinalProjectGroup2.Data
                 }
             );
 
+            // Seed data for Products
 
-
-            // Seed data for Animal
         }
     }
     
