@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "PABlmT9sbO/FNW0+U9yIKmQ9bsmce0z/JY6OcXtHZ8M=",
+  "Hash": "KECgucKF1/xIoZJQ7mRpX9kJZiCBzLI6YCnX7QRm1lE=",
   "Source": "FinalProjectGroup2",
   "BasePath": "_content/FinalProjectGroup2",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }
