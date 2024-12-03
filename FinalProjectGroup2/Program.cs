@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using FinalProjectGroup2.Data;
 using Microsoft.AspNetCore.Builder;
 using NSwag.AspNetCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
